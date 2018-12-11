@@ -1,4 +1,16 @@
+While there are installation instructions in the repositories, I found them lacking as they assume there 
+is already a configured system. These instructions are done on a freshly installed Arch based server (Manjaro),
+and detail all the steps that I required to get Konishi running.
+
+# Arch systems (Manjaro)
 ## Zimmerman
+### Introduction
+I opted to go for a simple sqlite installation, isntead of postgres, so I added the steps for creating and 
+configuring the sqlite db.
+
+Also, I couldn't get the register user part of the site working, so one of the steps here is to inject 
+a user into the empty database.
+
 ### Install prerequisites, clone zimmerman, create venv, install pip reqs
 1. `su`
 2. `pacman -Syy`
@@ -17,7 +29,7 @@
 ### Prep database
 1. `cd /var/www/zimmerman`
 2. `sqlite3 konishi.db`
-3 >> `.exit`
+3. >> `.exit`
 4. In config.py, set: SQLALCHEMY_DATABASE_URI = 'sqlite:////var/www/zimmerman/konishi.db'
 sqlite
 
