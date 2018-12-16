@@ -5,12 +5,12 @@ and detail all the steps that I required to get Konishi running.
 # Arch systems (Manjaro)
 ## Zimmerman
 ### Introduction
-I opted to go for a simple sqlite installation, isntead of postgres, so I added the steps for creating and 
+I opted to go for a simple sqlite installation, instead of postgres, so I added the steps for creating and 
 configuring the sqlite db.
 
 Also, I couldn't get the register user part of the site working, so one of the steps here is to inject 
 a user into the empty database.
-> Register is now working, this parts is obsolete. I keep it in as extra info, might you ever need it again.
+> Register is now working, this part is obsolete. I keep it in as extra info, might you ever need it again.
 
 ### Install prerequisites, clone zimmerman, create venv, install pip reqs
 1. `su`
