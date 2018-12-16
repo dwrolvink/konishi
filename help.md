@@ -24,7 +24,7 @@ a user into the empty database.
 9. `virtualenv konishienv`
 10. `source konishienv/bin/activate`
 11. `pip install -r requirements.txt`
-12. `chown dorus: /var/www -R`
+12. `chown <username>: /var/www -R`
 13. exit root user
 
 ### Prep database
@@ -42,8 +42,8 @@ from app import db # Import the database object from app.py
 db.create_all() # Create the database cluster
 quit() # Exit out of python
 ```
-
-### Add admin user
+> You can skip this section since registration works now.
+### Add user
 1. Generate password hash
 ```
 cd /var/www/zimmerman
@@ -56,7 +56,7 @@ python3
 ```
 'sha512$p5dTmOr1$13d80ee99606cd9f541cc6d7599803e460989da02d814395405abf95f4dcb2b3bcac9307b721601723ca41b4a1ad2fa0642e6e808ee4dbb4a47930d9e2093ff0'
 
-### Insert guest user into db
+#### Insert user into db
 1. `cd /var/www/zimmerman`
 2. `sqlite3 konishi.db`
 3.
