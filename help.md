@@ -79,7 +79,7 @@ VALUES ('traps@are.gay','gudetama','mr','gudetama','sha512$p5dTmOr1$13d80ee99606
 ### Set config
 1. `cd /var/www/higala/src`
 2. `nano store.js`
-3. Change the backend url from 127.0.0.1:4000 to <your server ip>:4000
+3. Change the backend url from 127.0.0.1:4000 to \<your server ip\>:4000
 
 ### Run 
 1. `cd /var/www/higala`
