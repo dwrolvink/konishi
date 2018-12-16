@@ -10,6 +10,7 @@ configuring the sqlite db.
 
 Also, I couldn't get the register user part of the site working, so one of the steps here is to inject 
 a user into the empty database.
+> Register is now working, this parts is obsolete. I keep it in as extra info, might you ever need it again.
 
 ### Install prerequisites, clone zimmerman, create venv, install pip reqs
 1. `su`
